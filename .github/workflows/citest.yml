@@ -50,7 +50,7 @@ jobs:
           path: ./code/output.txt  # Replace with the actual path to your generated JSON file
 
       - name: Run test
-        uses: ./github/workflows/test.yml
+        uses: ./.github/workflows/test.yml
 
   deploy:
     needs:
