@@ -1,3 +1,7 @@
+name: Called workflow
+
+on:
+  workflow_dispatch:
 
 jobs:
   show-console-message:
