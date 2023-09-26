@@ -1,0 +1,10 @@
+
+jobs:
+  show-console-message:
+    runs-on: windows-latest
+    steps:
+      - name: Display message
+        run: |
+          echo "Hello world"
+
+            
