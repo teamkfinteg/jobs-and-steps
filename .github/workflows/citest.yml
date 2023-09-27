@@ -30,6 +30,11 @@ jobs:
     runs-on: ubuntu-latest  # You can change the runner as needed
 #    needs: build  # Specify the job that needs to be completed before this job can run
     steps:
+      - name: set env.PR_BRANCH value for jobs
+        run: |
+          echo "github.ref: ${{github.ref}}"
+          echo "context.ref: ${{context.ref}}"
+
       - name: Checkout code
         uses: actions/checkout@v4
         env:
