@@ -32,7 +32,7 @@ jobs:
     steps:
       - name: set env.PR_BRANCH value for jobs
         run: |
-          echo "github.repo: ${{github.repo}}"
+          echo "github.repository: ${{github.repository}}"
 
       - name: Checkout code
         uses: actions/checkout@v4
